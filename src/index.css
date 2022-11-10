@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.component_title{
+  color: #3A4562;
+  font-size: 20px;
+}
+.component_sub_titile{
+  font-size: 16px;
+  font-weight: 400;
+  color: #878D9D;
+}
+.component_country{
+  font-size: 16px;
+  font-weight: 400;
+  color: #878D9D;
+}
+.component_country a{
+  color: #D8D8D8;
+}
