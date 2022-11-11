@@ -1,9 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+body{
+  background-color: #F5F5F5;
+}
+.component{
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 10px 10px;
+}
 .component_title{
   color: #3A4562;
+  font-weight: 700;
   font-size: 20px;
 }
 .component_sub_titile{
@@ -18,4 +27,9 @@
 }
 .component_country a{
   color: #D8D8D8;
+}
+.img_component{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
 }
