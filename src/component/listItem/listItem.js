@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import functionForFindDefferenceBetwenTwoDates from './functionForFindDefferenceBetwenTwoDates'
-import './listItem.css';
 
 const StarRating = () => {
   const [rating, setRating] = useState(0);
@@ -14,7 +13,6 @@ const StarRating = () => {
           <button
             type="button"
             key={index}
-            className={index <= (hover || rating) ? "fa-regular" : "fa-light"}
             onClick={() => setRating(index)}
             onMouseEnter={() => setHover(index)}
             onMouseLeave={() => setHover(rating)}
