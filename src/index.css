@@ -5,6 +5,7 @@ body{
   background-color: #F5F5F5;
 }
 .component{
+  height: auto;
   background-color: #ffffff;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -14,6 +15,9 @@ body{
   color: #3A4562;
   font-weight: 700;
   font-size: 20px;
+}
+.component_title:hover{
+  text-decoration: underline;
 }
 .component_sub_titile{
   font-size: 16px;
@@ -32,4 +36,72 @@ body{
   width: 70px;
   height: 70px;
   border-radius: 50%;
+}
+.underLine{
+  border-bottom: 1px solid #3A4562;
+}
+.applyBtn{
+  background-color: #3A4562;
+  color: white;
+  padding: 18px 30px;
+  border-radius: 8px;
+}
+.applyBtn:hover{
+  color: palegoldenrod;
+  background-color: #4d5b83;
+}
+.btn{
+  font-size: 16px;
+  font-weight: 700;
+  padding: 20px 0;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #3A4562;
+}
+.infoBattun{
+  background: rgba(161, 177, 219, 0.317343);
+  border: 1px solid rgba(85, 105, 158, 0.3);
+}
+.infoBattun_yellow{
+  background: rgba(255, 207, 0, 0.15);
+  border: 1px solid #FFCF00;
+}
+.btn_return{
+  background-color: #E4E5EA;
+  padding: 20px 30px;
+}
+.container_footer{
+  margin-top: 100px;
+  margin-left: 5rem;
+}
+
+.sidePanel{
+  width: 400px;
+  height: 436px;
+  background-color: #2A3047;
+  color: white;
+  padding: 30px 50px;
+}
+
+
+.location{
+  color:grey;
+}
+.goToFullPage{
+  text-align: inherit;
+}
+.imgFullPost{
+  height: 230px;
+  border: 1px solid grey;
+  border-radius: 15px;
+}
+.custom_paginate{
+  text-align: center;
+}
+.pagination{
+  background-color: white;
+  display: inline-flex;
+  color: #5876C5;
+  font-size: 20px;
 }
