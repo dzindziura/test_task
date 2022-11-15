@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import { ListGenerate } from './component/listGenerate/listGenerate';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import JobDetails from './component/jobDetails/jobDetails'
-
 const App = () => {
 
   const [data, setData] = useState([]);
@@ -37,7 +36,7 @@ const App = () => {
     setId(id);
   }
   if (loading) {
-    return <h1>Loading...</h1>
+    return <h1>Loading ...</h1>
   }
 
   return (

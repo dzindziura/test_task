@@ -36,23 +36,23 @@ export const ListItem = (props) => {
   const result = functionForFindDefferenceBetwenTwoDates(dayOld, monthOld, yearOld);
 
   return (
-    <div key={id} className="flex justify-evenly component">
-      <div className='ml-5 mt-6 flex-none'><span className='inline-block align-middle'><img className='img_component' src={pictures[0]} /></span></div>
-      <div className='ml-5 mt-5 w-3/5'>
+    <div key={id} className="lg:flex lg:justify-evenly component lg:bg-inherit grid grid-flow-col bg-slate-200">
+      <div className='row-span-2 mr-5 pt-10'><span className='lg:inline-block lg:align-middle'><img className='img_component' src={pictures[0]} /></span></div>
+      <div className='lg:ml-5 lg:mt-5 lg:w-3/5 col-span-2'>
         <p className='component_title'><Link to={'/jobDetailed/' + id}>{title}</Link></p>
         <p className='component_sub_titile mt-3'>{name}</p>
         <p className='component_country mt-3'><Link to="#"><i className="fa-solid fa-location-dot mr-2"></i></Link>{address}</p>
       </div>
-      <div className='my-auto relative flex-initial w-64'>
-        <div className='absolute right-0'>
+      <div className='lg:my-auto lg:relative lg:flex-initialw-64 col-start-2'>
+        <div className=''>
           <StarRating />
         </div>
       </div>
-      <div className='relative flex-initial w-40'>
-        <div className='absolute right-0 top-5'>
-          <i onClick={() => setSolidBookMark(!solidBookMark)} className={solidBookMark ? "fa-solid fa-bookmark" : "fa-regular fa-bookmark"}></i>
+      <div className='relative flex-initial lg:w-40 col-span-3'>
+        <div className='lg:absolute lg:right-0 lg:top-5'>
+          <i onClick={() => setSolidBookMark(!solidBookMark)} className={solidBookMark ? "fa-solid fa-bookmark hidden lg:block" : "fa-regular fa-bookmark hidden lg:block"}></i>
         </div>
-        <div className='absolute bottom-0 right-0'>Posted {result} days ago</div>
+        <div className='lg:absolute lg:bottom-0 lg:right-0 text-center'>Posted {result} days ago</div>
       </div>
     </div>
   )
